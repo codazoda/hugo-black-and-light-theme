@@ -4,7 +4,7 @@
   <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
 
   <div id=sub-header>
-    {{ .Date.Format (.Site.Params.dateform | default "January 2006") }} · {{ .ReadingTime }} minute read
+    Updated {{ .Lastmod.Format (.Site.Params.dateform | default "January 2006") }} · Created {{ .Date.Format (.Site.Params.dateform | default "January 2006") }}
   </div>
 
   <div class="entry-content">
